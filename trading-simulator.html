@@ -565,7 +565,7 @@ details summary{cursor:pointer;color:var(--mut);font-size:12.5px}
    ============================================================ */
 const $  = (s,r=document)=>r.querySelector(s);
 const $$ = (s,r=document)=>Array.from(r.querySelectorAll(s));
-const KEY='twsim.v2', OLDKEY='twsim.v1';
+const KEY='twsim.v3', OLDKEY='twsim.v2', V1KEY='twsim.v1';
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
 const r2=v=>Math.round(v*100)/100;
 const r8=v=>Math.round(v*1e8)/1e8;
@@ -701,10 +701,14 @@ function fxToBaseOf(s,ccy){ return ccy===s.base?1:(s.base==='TWD'?s.fx:1/s.fx); 
 let state;
 try{
   const raw=localStorage.getItem(KEY);
-  if(raw) state=migrate(JSON.parse(raw));
+  if(raw) { state=migrate(JSON.parse(raw)); }
   else{
     const old=localStorage.getItem(OLDKEY);
-    state = old ? migrateV1(JSON.parse(old)) : defaults();
+    if(old){ state=migrate(JSON.parse(old)); }
+    else{
+      const v1=localStorage.getItem(V1KEY);
+      state = v1 ? migrateV1(JSON.parse(v1)) : defaults();
+    }
   }
 }catch(e){ state=defaults(); }
 
