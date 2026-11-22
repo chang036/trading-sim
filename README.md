@@ -4,6 +4,8 @@
 
 資料夾：`C:\Users\charl\trading-sim`
 
+????<https://trading-sim.charleschang0306.workers.dev/>
+
 | 檔案 | 用途 |
 |---|---|
 | `trading-simulator.html` | 主要工具（單一檔案、免安裝、離線可跑），含多幣別錢包、DCA、績效分析、蒙地卡羅與 PWA |
