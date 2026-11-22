@@ -2,9 +2,7 @@
 
 用**虛擬資金**練習出入金、買賣、計算損益。全程不連接任何真實帳戶，也不會有任何實際金流。
 
-資料夾：`C:\Users\charl\trading-sim`
 
-> 線上版：[trading-sim.charleschang0306.workers.dev](https://trading-sim.charleschang0306.workers.dev/)
 
 | 檔案 | 用途 |
 |---|---|
@@ -18,6 +16,7 @@
 ## 1. 網頁版（建議先玩這個）
 
 雙擊 `trading-simulator.html`，用 Chrome / Edge 開啟。
+> 線上版：[trading-sim.charleschang0306.workers.dev](https://trading-sim.charleschang0306.workers.dev/)
 
 第一次開啟是空的，按 **設定 → 載入範例資料** 可以馬上看到完整畫面；
 或直接從 **交易 / 出入金** 開始：先入金 →（需要時）換匯 → 買進。
