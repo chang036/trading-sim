@@ -4,7 +4,7 @@
 
 資料夾：`C:\Users\charl\trading-sim`
 
-> **????** [trading-sim.charleschang0306.workers.dev](https://trading-sim.charleschang0306.workers.dev/)
+> **線上版： ** [trading-sim.charleschang0306.workers.dev](https://trading-sim.charleschang0306.workers.dev/)
 
 | 檔案 | 用途 |
 |---|---|
